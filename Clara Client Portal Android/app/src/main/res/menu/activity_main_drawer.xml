@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_matter"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:icon="@drawable/ic_matter"
+            android:title="@string/menu_matter" />
+        <item
+            android:id="@+id/nav_initial_retainer"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:icon="@drawable/ic_initial_retainer"
+            android:title="@string/menu_initial_retainer" />
+        <item
+            android:id="@+id/nav_payment_plan"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:icon="@drawable/ic_payment_plan"
+            android:title="@string/menu_payment_plan" />
+        <item
+            android:id="@+id/nav_invoice"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:icon="@drawable/ic_invoice"
+            android:title="@string/menu_invoice" />
+        <item
+            android:id="@+id/nav_document_upload"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:icon="@drawable/ic_document_upload"
+            android:title="@string/menu_document_upload" />
+        <item
+            android:id="@+id/nav_check_list"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:icon="@drawable/ic_checklist"
+            android:title="@string/menu_checklist" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_log_out" />
+    </group>
+</menu>

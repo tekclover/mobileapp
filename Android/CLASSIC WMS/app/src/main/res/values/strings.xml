@@ -1,0 +1,49 @@
+
+<resources>
+    <string name="app_name">Classic WMS</string>
+    <string name="app_version">v2.16</string>
+    <string name="enter_user_name">Username</string>
+    <string name="enter_password">Password</string>
+    <string name="login">Login</string>
+    <string name="confirm">Confirm</string>
+    <string name="hint_search_asn">Search ASN No</string>
+    <string name="new_scanner">Pair New Scanner</string>
+    <string name="cancel">Cancel</string>
+    <string name="model">Model #: </string>
+    <string name="serial">Name: </string>
+    <string name="disable">Disable</string>
+    <string name="enable">Enable</string>
+    <string name="beep">Beep</string>
+    <string name="api_error_msg_btn_txt">Retry</string>
+    <string name="api_data_empty_msg">No Data Available</string>
+    <string name="no_internet_connection_msg_header">Unable to connect to the internet</string>
+    <string name="no_internet_connection_msg">It appears that you don’t have an active\ninternet connection.</string>
+    <string name="api_error_header_msg">Communication Error</string>
+    <string name="api_error_msg">Sorry, we are unable to load your information.</string>
+    <string name="retry">Retry</string>
+    <string name="no_data_available">No data available</string>
+    <string name="ok">OK</string>
+    <string name="s_no">S No</string>
+    <string name="cases">Cases</string>
+    <string name="putaway">Putaway</string>
+    <string name="tranfers">Transfers</string>
+    <string name="pallet_id">Pallet ID</string>
+    <string name="picking_txt">Picking</string>
+    <string name="reports_pallet">Pallet ID Report</string>
+    <string name="reports_bin">Storage Bin Report</string>
+    <string name="reports_item_code">Item Code Report</string>
+    <string name="quality_txt">Quality</string>
+    <string name="picking_returns">Returns</string>
+    <string name="perpetual_txt">Perpetual</string>
+    <string name="annual_txt">Annual</string>
+    <string name="internet_check_msg">Please check internet Connection</string>
+    <string name="internet_check_msg_store_offline">No Internet Connection, Still you data will be stored offline</string>
+    <string name="keySendInternetStatus">Broadcast_Internet_Status</string>
+    <string name="activity_intent_filter_action">com.tvhht.myapplication.ACTION</string>
+    <string name="activity_action_from_service">com.tvhht.myapplication.service.ACTION</string>
+    <string name="datawedge_intent_key_source">com.symbol.datawedge.source</string>
+    <string name="datawedge_intent_key_label_type">com.symbol.datawedge.label_type</string>
+    <string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>
+    <string name="barcode_id">Barcode ID</string>
+</resources>
+

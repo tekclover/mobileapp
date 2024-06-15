@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar">
+
+    </include>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/rectangle_1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="15dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:weightSum="100">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="40"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/putaway_detail_txt_user"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="sans-serif"
+                                    android:letterSpacing="-0.03"
+                                    android:text="WH01"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/brownish_grey"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/header_tt_details"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="sans-serif"
+                                    android:letterSpacing="-0.03"
+                                    android:text="@string/picking_txt"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/brownish_grey"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="60"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/allocate_qty"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                   android:layout_gravity="right"
+                                    android:fontFamily="@font/arial"
+                                    android:letterSpacing="-0.03"
+                                    android:textColor="@color/brownish_grey"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_gravity="right"
+                                    android:id="@+id/remain_qty"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/arial"
+                                    android:letterSpacing="-0.03"
+                                    android:textColor="@color/brownish_grey"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/barcode_value"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:textColor="@android:color/transparent"
+                                    android:textIsSelectable="true">
+
+                                </EditText>
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/pinkish_grey"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="12dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="12dp"
+                        android:weightSum="100">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="-0.03"
+                                android:text="@string/bin_loc"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="13.5sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="-0.03"
+                                android:text="@string/barcode"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="13.5sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="-0.03"
+                                android:layout_marginLeft="3dp"
+                                android:text="Inv Qty"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="13.5sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="18"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="-0.03"
+                                android:text="Pick Qty"
+                                android:layout_marginLeft="3dp"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="13.5sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="12"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="-0.03"
+                                android:text="Sel "
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="13.5sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ProgressBar
+                                android:id="@+id/progress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" />
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/Recycler_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginBottom="@dimen/dimen_12dp"
+
+                                />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="50"
+                android:background="@drawable/button_bg_red"
+                android:text="Cancel"
+                android:textColor="@color/white_two"
+                android:textSize="12sp" />l
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="50"
+                android:background="@drawable/button_bg_orange"
+                android:text="@string/confirm"
+                android:textColor="@color/white_two"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

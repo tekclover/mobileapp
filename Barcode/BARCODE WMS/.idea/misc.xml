@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/activity_login.xml" value="0.1408514492753623" />
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/activity_new_scanner.xml" value="0.22" />
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/activity_picking_bin_confirm.xml" value="0.1408514492753623" />
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/activity_picking_details.xml" value="0.11614583333333334" />
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/activity_picking_details_confirm.xml" value="0.1408514492753623" />
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/activity_report_storage_bin.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/dialog_new_scanner22.xml" value="0.1408514492753623" />
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/dialog_view_five_three_text.xml" value="0.1408514492753623" />
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/dialog_view_two.xml" value="0.1408514492753623" />
+        <entry key="..\:/Akbar/Development/App/CLASSIC WMS/app/src/main/res/layout/spinner_item.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_case_details.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_home.xml" value="0.14666666666666667" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_picking_bin_confirm.xml" value="0.12" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_picking_details_confirm.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_quality_details.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_quality_details_confirm.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_new_scanner.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_new_scanner22.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_one.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_one_activity.xml" value="0.10052083333333334" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_one_cc.xml" value="0.1015625" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_one_cc_activity.xml" value="0.10052083333333334" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_one_edit.xml" value="0.1408514492753623" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_one_edit_activity.xml" value="0.1408514492753623" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_two.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_two_inventory.xml" value="0.14666666666666667" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_picking_details_confirm_cell.xml" value="0.14666666666666667" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_quality_details_cell.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_quality_details_confirm_cell.xml" value="0.1" />
+        <entry key="..\:/Akbar/Development/Code/WMS/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/login_group.xml" value="0.10520833333333333" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/drawable/corner.xml" value="0.123" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/drawable/edittext_bg.xml" value="0.111" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/drawable/rectangle_1.xml" value="0.1025" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/drawable/spinner_bg.xml" value="0.111" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_annual_detail.xml" value="0.34375" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_annual_list.xml" value="0.34375" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_asn_no.xml" value="0.1" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_login.xml" value="0.3775" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_perpetual_confirm.xml" value="0.6290322580645161" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_perpetual_details.xml" value="0.27375" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_perpetual_list.xml" value="0.325" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_picking_bin_confirm.xml" value="0.33" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_picking_details.xml" value="0.49" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_picking_details_confirm.xml" value="0.32837301587301587" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_putaway_details.xml" value="0.33" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_putaway_details_confirm.xml" value="0.4" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_quality_details.xml" value="0.30125" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_quality_details_confirm.xml" value="0.5" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_report_item_code.xml" value="0.30875" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_report_pallet_id.xml" value="0.30875" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_report_storage_bin.xml" value="0.21626984126984128" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/activity_transfers.xml" value="0.15" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_cc_stock.xml" value="0.27375" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_five_three_text.xml" value="0.3225" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_one.xml" value="0.24503968253968253" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_one_cc.xml" value="0.35625" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_one_edit.xml" value="0.35625" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_two.xml" value="0.30125" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_two_cc.xml" value="0.35625" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/dialog_view_two_inventory.xml" value="0.35625" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_annual_list_cell.xml" value="0.44246031746031744" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_home_cell_reports.xml" value="0.17074275362318841" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_home_cells_inbound.xml" value="0.17074275362318841" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_home_cells_outbound.xml" value="0.1" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_home_cells_stocks.xml" value="0.33" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_perpetual_detail_cell.xml" value="0.5" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_perpetual_list_cell.xml" value="0.325" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_picking_details_cell.xml" value="0.49" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_picking_details_confirm_cell.xml" value="0.27375" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_putaway_cell.xml" value="0.23625" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_quality_details_confirm_cell.xml" value="0.49" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_report_item_code_cell.xml" value="0.21626984126984128" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_report_pallet_id_cell.xml" value="0.30875" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_report_storage_bin_cell.xml" value="0.21626984126984128" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/list_transfers_cell.xml" value="0.18" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/popup_content.xml" value="0.32625" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/spinner_item.xml" value="0.32625" />
+        <entry key="..\:/Development/os1/root/MobileApp/Android/CLASSIC WMS/app/src/main/res/layout/tool_bar.xml" value="0.3575" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

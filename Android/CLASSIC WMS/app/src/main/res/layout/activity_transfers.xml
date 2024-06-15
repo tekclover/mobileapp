@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar">
+
+    </include>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/rectangle_1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="100">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txt_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:textAllCaps="true"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:letterSpacing="-0.03"
+                            android:text="WH01"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:letterSpacing="-0.03"
+                            android:text="@string/tranfers"
+                            android:textAllCaps="true"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="20"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/barcode_value"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:textColor="@android:color/transparent"
+                            android:textIsSelectable="true">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="40"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_asn_val"
+                            android:layout_width="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:fontFamily="sans-serif"
+                            android:letterSpacing="-0.03"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/pinkish_grey"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingTop="12dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="12dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginStart="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="-0.02"
+                        android:text="Item Code "
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="29"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="-0.02"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Pallet ID"
+                       />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="-0.02"
+                         android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Inv Qty "
+                    />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="-0.02"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Tran Qty"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="-0.02"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Sel"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadeScrollbars="false"
+                    android:scrollbarSize="5dp"
+                    android:scrollbarThumbVertical="@android:color/darker_gray"
+                    android:scrollbars="vertical" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="50"
+                android:background="@drawable/button_bg_red"
+                android:text="Cancel"
+                android:textColor="@color/white_two"
+                android:textSize="12sp" />l
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="50"
+                android:background="@drawable/button_bg_orange"
+                android:text="@string/confirm"
+                android:textColor="@color/white_two"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

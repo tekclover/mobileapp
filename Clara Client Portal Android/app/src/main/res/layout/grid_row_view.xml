@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_matter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_180"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_8"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/color_grey_low"
+        app:strokeWidth="0.5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lyt_count"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_32"
+                android:background="@drawable/count_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center"
+                    android:text="0"
+                    android:fontFamily="@font/roboto_slab_semi_bold"
+                    android:textColor="@color/white"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:textSize="@dimen/text_size_16"
+                    tools:text="0" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_matter"
+                android:layout_width="@dimen/dp_52"
+                android:layout_height="@dimen/dp_52"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="-32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:textSize="@dimen/text_size_16"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/roboto_slab_semi_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_matter"
+                tools:text="Matter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

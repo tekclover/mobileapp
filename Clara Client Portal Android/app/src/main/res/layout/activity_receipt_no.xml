@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.clara.clientportal.ui.receiptno.ReceiptNoActivity" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lyt_toolbar"
+            layout="@layout/include_toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_receipt_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_devil_blue"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:padding="@dimen/dp_16"
+                    android:text="@string/menu_receipt_no"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/receipt_no_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_8" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include
+                android:id="@+id/lyt_progress_parent"
+                layout="@layout/include_progress" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

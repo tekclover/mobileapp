@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_cell_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="25"
+            android:fontFamily="@font/arial"
+            android:gravity="start"
+            android:textColor="@color/brownish_grey"
+            android:textSize="@dimen/text_size_12sp"
+            android:textStyle="bold"
+            tools:text="Branch" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_cell_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="30"
+            android:fontFamily="@font/arial"
+            android:gravity="start"
+            android:textColor="@color/brownish_grey"
+            android:textSize="@dimen/text_size_12sp"
+            android:textStyle="bold"
+            tools:text="Order No" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_cell_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="25"
+            android:fontFamily="@font/arial"
+            android:gravity="start"
+            android:textColor="@color/brownish_grey"
+            android:textSize="@dimen/text_size_12sp"
+            android:textStyle="bold"
+            tools:text="Date" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/txt_cell_4"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</layout>

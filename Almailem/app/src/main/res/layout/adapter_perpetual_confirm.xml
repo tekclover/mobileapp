@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="5dp"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/txt_cell_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/brownish_grey"
+                android:letterSpacing="-0.03"
+                android:text="Barcode"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cell_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/brownish_grey"
+                android:letterSpacing="-0.03"
+                android:text="Part No"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cell_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/brownish_grey"
+                android:letterSpacing="-0.03"
+                android:text="Inv Qty "/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cell_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/brownish_grey"
+                android:letterSpacing="-0.03"
+                android:text="Counted Qty "/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/txt_cell_5"
+                android:gravity="center"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </CheckBox>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

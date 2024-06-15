@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.clara.clientportal.ui.checklist.CheckListViewModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lyt_toolbar"
+            layout="@layout/include_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_check_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_devil_blue"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:padding="@dimen/dp_16"
+                    android:text="@string/document_checklist"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_22" />
+
+                <include
+                    android:id="@+id/lyt_header_view"
+                    layout="@layout/include_header4_view"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/check_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_8" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include
+                android:id="@+id/lyt_progress_parent"
+                layout="@layout/include_progress" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

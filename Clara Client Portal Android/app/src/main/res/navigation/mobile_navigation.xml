@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.clara.clientportal.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_matter"
+        android:name="com.clara.clientportal.ui.matter.MatterFragment"
+        android:label="@string/menu_matter"
+        tools:layout="@layout/fragment_matter" />
+
+    <fragment
+        android:id="@+id/nav_initial_retainer"
+        android:name="com.clara.clientportal.ui.quotation.QuotationFragment"
+        android:label="@string/menu_quotation"
+        tools:layout="@layout/fragment_quotation" />
+    <fragment
+        android:id="@+id/nav_payment_plan"
+        android:name="com.clara.clientportal.ui.paymentplan.PaymentPlanFragment"
+        android:label="@string/menu_payment_plan"
+        tools:layout="@layout/fragment_payment_plan" />
+    <fragment
+        android:id="@+id/nav_invoice"
+        android:name="com.clara.clientportal.ui.invoice.InvoiceFragment"
+        android:label="@string/menu_invoice"
+        tools:layout="@layout/fragment_invoice" />
+    <fragment
+        android:id="@+id/nav_check_list"
+        android:name="com.clara.clientportal.ui.document.DocumentFragment"
+        android:label="@string/menu_document"
+        tools:layout="@layout/fragment_document" />
+    <fragment
+        android:id="@+id/nav_document_upload"
+        android:name="com.clara.clientportal.ui.documentupload.DocumentUploadFragment"
+        android:label="@string/menu_document_upload"
+        tools:layout="@layout/fragment_document_upload" />
+    <fragment
+        android:id="@+id/nav_receipt_no"
+        android:name="com.clara.clientportal.ui.documentupload.DocumentUploadFragment"
+        android:label="@string/menu_receipt_no"
+        tools:layout="@layout/fragment_document_upload" />
+</navigation>

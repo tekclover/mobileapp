@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/rectangle_1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="15dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:weightSum="100">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="40"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/gr_user"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="sans-serif"
+                                    android:letterSpacing="-0.03"
+                                    android:text="WH01"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/brownish_grey"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/header_tt_details"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="sans-serif"
+                                    android:letterSpacing="-0.03"
+                                    android:text="@string/gr"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/brownish_grey"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="30"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txt_count_val"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/arial"
+                                    android:letterSpacing="-0.03"
+                                    android:textColor="@color/brownish_grey"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="100">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="50"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/arial"
+                                android:letterSpacing="-0.02"
+                                android:text="@string/invoice_qty"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_bg"
+                                android:padding="15dp">
+
+
+                                <TextView
+                                    android:id="@+id/invoice_qty"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="0">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="50"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/arial"
+                                android:letterSpacing="-0.02"
+                                android:text="@string/released_acc_qty"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_bg"
+                                android:padding="15dp">
+
+
+                                <TextView
+                                    android:id="@+id/released_acc_qty"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="0">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="100">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_weight="50"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/arial"
+                                android:letterSpacing="-0.02"
+                                android:text="@string/released_rej_qty"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_bg"
+                                android:padding="15dp">
+                                <TextView
+                                    android:id="@+id/released_rgj_qty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:scrollbars="vertical"
+                                    android:layout_gravity="center"
+                                    android:text="0"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/cbm"
+                                android:layout_width="@dimen/dp_40"
+                                android:layout_height="@dimen/dp_40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/dimen_12dp"
+                                android:background="@drawable/button_bg_orange"
+                                android:padding="@dimen/dp_8"
+                                app:srcCompat="@drawable/ic_global_inventory" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/brownish_grey"
+                        android:layout_margin="@dimen/dimen_12dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="100">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="50"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/arial"
+                                android:letterSpacing="-0.02"
+                                android:text="@string/accepted_qty"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_bg"
+                                android:padding="15dp">
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/accepted_qty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:inputType="number"
+                                    android:cursorVisible="false"
+                                    android:maxLength="8"
+                                    android:textColor="@color/brownish_grey"
+                                    tools:text="0"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="50"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/arial"
+                                android:letterSpacing="-0.02"
+                                android:text="@string/rejected_qty"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_bg"
+                                android:padding="15dp">
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/rejected_qty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:inputType="number"
+                                    android:background="@android:color/transparent"
+                                    android:maxLength="8"
+                                    android:textColor="@color/brownish_grey"
+                                    tools:text="0"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="50"
+                android:background="@drawable/button_bg_red"
+                android:text="@string/cancel"
+                android:textColor="@color/white_two"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="50"
+                android:background="@drawable/button_bg_orange"
+                android:text="@string/confirm"
+                android:textColor="@color/white_two"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

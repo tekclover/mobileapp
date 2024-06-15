@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="20dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="20dp"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="18"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cell_1"
+                tools:text="S no "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="-0.02"
+                android:textColor="@color/warm_grey_two"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cell_2"
+                tools:text="ASN Number "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="-0.02"
+                android:textColor="@color/warm_grey_two"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="22"
+            android:orientation="horizontal">
+
+            <TextView
+                tools:text="Date "
+                android:id="@+id/txt_cell_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="-0.02"
+                android:textColor="@color/warm_grey_two"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.clara.clientportal.ui.home.HomeViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_bottom_background"
+            android:orientation="vertical"
+            tools:context=".ui.home.HomeFragment">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_36"
+                android:layout_marginTop="@dimen/dp_36"
+                android:layout_marginEnd="@dimen/dp_36"
+                android:fontFamily="@font/roboto_slab_semi_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"
+                tools:text="shdfhsf" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_36"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginEnd="@dimen/dp_36"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                tools:text="shdfhsf" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_36"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="@dimen/dp_4"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="13434344" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_28"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginEnd="@dimen/dp_36"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="@dimen/dp_4"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16"
+                    app:layout_constraintStart_toEndOf="@+id/text_phone"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="test@gmail.com" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_name">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_80"
+                    android:background="@drawable/grid_view_background" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_menu_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_24"
+                    android:layout_marginEnd="@dimen/dp_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <include
+            android:id="@+id/lyt_progress_parent"
+            layout="@layout/include_progress" />
+    </FrameLayout>
+</layout>

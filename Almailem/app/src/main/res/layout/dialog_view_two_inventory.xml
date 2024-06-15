@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutDialogContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:paddingLeft="0dp"
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dialog_header"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="20dp"
+                android:text="Enter Quantity"
+                android:textColor="@color/white_two"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_scan_code"
+                android:tint="@color/white_two"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/textTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textTitle" />
+
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Enter Qty"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonAction"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/invqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/arial"
+                    android:letterSpacing="-0.02"
+                    android:text="@string/order_qty"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+
+                    android:padding="10dp">
+
+
+                    <EditText
+                        android:id="@+id/qty_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:maxLength="8"
+                        android:text="100"
+                        android:textColor="@color/brownish_grey">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/text_picked_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/arial"
+                    android:letterSpacing="-0.02"
+                    android:text="@string/picked_qty"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+
+                    android:padding="10dp">
+
+
+                    <EditText
+                        android:id="@+id/qty_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:text="100"
+                        android:textColor="@color/brownish_grey">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/button_bg_red"
+                    android:text="Cancel"
+                    android:textColor="@color/white_two"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonYes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/button_bg_orange"
+                    android:text="@string/confirm"
+                    android:textColor="@color/white_two"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.clara.clientportal.ui.documentupload.DocumentUploadViewModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lyt_toolbar"
+            layout="@layout/include_toolbar" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lyt_document_upload_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_document_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_devil_blue"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:padding="@dimen/dp_16"
+                    android:text="@string/menu_document_upload"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_22" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/dp_24"
+                    android:background="@drawable/upload_button_background"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_16"
+                    android:text="@string/upload"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_24" />
+
+                <include
+                    android:id="@+id/lyt_header_view"
+                    layout="@layout/include_header5_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/document_uploaded_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_8" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include
+                android:id="@+id/lyt_progress_parent"
+                layout="@layout/include_progress" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

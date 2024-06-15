@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyt_installment_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_installment_no_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:text="@string/installment_no"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toStartOf="@+id/text_due_date_label"
+                app:layout_constraintHorizontal_weight="1.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Installment No" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_installment_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toStartOf="@+id/text_due_date"
+                app:layout_constraintHorizontal_weight="1.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_installment_no_label"
+                tools:text="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_due_date_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:text="@string/due_date"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_installment_no_label"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Due Date" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_due_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_installment_no"
+                app:layout_constraintTop_toBottomOf="@+id/text_due_date_label"
+                tools:text="2023-09-06" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyt_installment_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lyt_installment_no">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_installment_amount_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:text="@string/installment_amount"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toStartOf="@+id/text_paid_amount_label"
+                app:layout_constraintHorizontal_weight="1.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Installment Amount" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_installment_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toStartOf="@+id/text_paid_amount"
+                app:layout_constraintHorizontal_weight="1.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_installment_amount_label"
+                tools:text="$1000" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_paid_amount_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:text="@string/paid_amount"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_installment_amount_label"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Paid Amount" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_paid_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_installment_amount"
+                app:layout_constraintTop_toBottomOf="@+id/text_paid_amount_label"
+                tools:text="$0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyt_balance_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lyt_installment_amount">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_balance_amount_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:text="@string/balance_amount"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Balance Amount" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_balance_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_balance_amount_label"
+                tools:text="$1000" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

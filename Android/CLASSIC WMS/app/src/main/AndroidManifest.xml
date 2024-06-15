@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tvhht.myapplication">
+
+    <application
+        android:name=".utils.WMSApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".login.ConfirmGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cases.ASNNumberListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".putaway.PutAwayListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".putaway.PutAwayDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".cases.CaseDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".quality.QualityListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".transfers.InventoryListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".quality.QualityDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".quality.utils.QualityCustomDialogActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".putaway.utils.QuantityCustomDialogActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+
+        <activity
+            android:name=".putaway.utils.AddBinCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+
+        <activity
+            android:name=".inboundreversal.utils.ReversalAddBinCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+        <activity
+            android:name=".putaway.utils.ChangeBinCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+
+        <activity
+            android:name=".inboundreversal.utils.ReversalChangeBinCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+        <activity
+            android:name=".login.LoginCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent"></activity>
+
+        <activity
+            android:name=".annual.utils.PalletIDNewCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+
+        <activity
+            android:name=".reports.utils.ScanPalletCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+        <activity
+            android:name=".picking.utils.AddPalletIDCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+
+        <activity
+            android:name=".outboundreturns.utils.HeNoCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+
+        <activity
+            android:name=".outboundreturns.utils.ItemCodeCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+        <activity
+            android:name=".picking.utils.ItemCodeCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+
+        <activity
+            android:name=".picking.utils.PalletIDCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+
+        <activity
+            android:name=".outboundreturns.utils.PalletIDCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+        <activity
+            android:name=".quality.utils.HECustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+        <activity
+            android:name=".transfers.utils.SearchBinCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+        <activity
+            android:name=".picking.utils.HeNoCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+
+        <activity
+            android:name=".outboundreturns.utils.AddPalletIDCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+
+        <activity
+            android:name=".reports.utils.ScanBinCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+        <activity
+            android:name=".transfers.utils.SearchTargetBinCustomDialog"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+        <activity
+            android:name=".inboundreversal.utils.ReversalQuantityCustomDialogActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".transfers.utils.InvQuantityCustomDialogActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".inboundreversal.InboundReversalDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".inboundreversal.InboundReversalListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".outboundreturns.ReturnPickingListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".outboundreturns.ReturnPickingDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".reports.ReportListFromPalletIDActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".reports.ReportListFromBinNoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".reports.ReportListFromItemCodeActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".outboundreturns.utils.PickingQuantityActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".outboundreturns.utils.AddPickingQuantityActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".picking.utils.PickingQuantityActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".picking.utils.AddPickingQuantityActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".outboundreturns.ReturnPickingBinDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".picking.PickingBinDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".picking.PickingDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".picking.PickingListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".stock.PerpetualListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".annual.AnnualListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".annual.AnnualDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".annual.AnnualConfirmActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".stock.PerpetualDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".annual.utils.QualityCustomDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".annual.utils.QualityCustomDialog2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".stock.PerpetualConfirmActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".stock.utils.QualityCustomDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+        <receiver
+            android:name=".MyDataReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

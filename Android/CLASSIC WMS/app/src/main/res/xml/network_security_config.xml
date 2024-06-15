@@ -1,0 +1,12 @@
+<network-security-config xmlns:tools="http://schemas.android.com/tools"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<domain-config>
+    <base-config cleartextTrafficPermitted="false"/>
+    <domain includeSubdomains="true">https://dev.classicwms.com:8086</domain>
+    <domain includeSubdomains="true">https://dev.classicwms.com:8086/classicwms</domain>
+    <trust-anchors>
+        <certificates src="system" />
+        <certificates src="user" />
+    </trust-anchors>
+</domain-config>
+</network-security-config>

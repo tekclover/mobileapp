@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bill_type">
+        <item>Billable</item>
+        <item>Non-Billable</item>
+    </string-array>
+</resources>

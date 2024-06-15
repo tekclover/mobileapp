@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_items">
+        <item>Home</item>
+        <item>Matter</item>
+        <item>Initial Retainer</item>
+        <item>Payment Plan</item>
+        <item>Invoice</item>
+        <item>Checklist</item>
+        <item>Document Upload</item>
+        <item>Receipt No</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="icons">
+        <item>ic_home</item>
+        <item>ic_matter</item>
+        <item>ic_initial_retainer</item>
+        <item>ic_payment_plan</item>
+        <item>ic_invoice</item>
+        <item>ic_checklist</item>
+        <item>ic_document_upload</item>
+        <item>ic_receipt_no</item>
+        <item>ic_logout</item>
+    </string-array>
+</resources>

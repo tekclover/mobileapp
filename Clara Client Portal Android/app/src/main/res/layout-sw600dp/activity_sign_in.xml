@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.clara.clientportal.ui.signin.SignInViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.signin.SignInActivity">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="@dimen/dp_300"
+                    android:layout_height="@dimen/dp_180"
+                    android:layout_marginTop="@dimen/dp_42"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_mr_logo_immle" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lyt_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_128"
+                    android:layout_marginTop="@dimen/dp_42"
+                    android:layout_marginEnd="@dimen/dp_128"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_logo">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/lyt_mobile_otp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingBottom="@dimen/dp_8">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_mobile_otp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:text="@string/mobile_otp"
+                            android:textColor="@color/color_devil_blue"
+                            android:textSize="@dimen/text_size_16"
+                            tools:text="Mobile OTP" />
+
+                        <View
+                            android:id="@+id/view_mobile_otp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_1"
+                            android:layout_marginTop="@dimen/dp_16"
+                            android:background="@color/color_devil_blue" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/lyt_email_otp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingEnd="@dimen/dp_8"
+                        android:paddingBottom="@dimen/dp_8">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_email_otp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:text="@string/email_otp"
+                            android:textColor="@color/color_grey_low"
+                            android:textSize="@dimen/text_size_16"
+                            tools:text="Email OTP" />
+
+                        <View
+                            android:id="@+id/view_email_otp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_1"
+                            android:layout_marginTop="@dimen/dp_16"
+                            android:background="@color/color_grey_low" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ed_txt_otp_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_128"
+                    android:layout_marginTop="@dimen/dp_42"
+                    android:layout_marginEnd="@dimen/dp_128"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:hint="@string/mobile_no"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/color_devil_blue"
+                    android:textColorHint="@color/color_grey"
+                    android:textSize="@dimen/text_size_18"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/img_arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lyt_otp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_arrow"
+                    android:layout_width="@dimen/dp_52"
+                    android:layout_height="@dimen/dp_52"
+                    android:layout_marginTop="@dimen/dp_36"
+                    android:layout_marginEnd="@dimen/dp_110"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lyt_otp"
+                    app:srcCompat="@drawable/ic_right" />
+
+                <View
+                    android:id="@+id/horizontal_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginStart="@dimen/dp_128"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_128"
+                    android:background="@color/color_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ed_txt_otp_email" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_otp_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/dp_128"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_128"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/mobile_otp_header"
+                    android:textColor="@color/color_devil_blue"
+                    android:textSize="@dimen/text_size_14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontal_view" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lyt_otp_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_128"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:layout_marginEnd="@dimen/dp_128"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_otp_header">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/otp_1"
+                        android:layout_width="@dimen/dp_38"
+                        android:layout_height="@dimen/dp_38"
+                        android:layout_margin="@dimen/dp_8"
+                        android:background="@drawable/otp_background"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_15"
+                        android:textColor="@color/color_devil_blue"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/otp_2"
+                        android:layout_width="@dimen/dp_38"
+                        android:layout_height="@dimen/dp_38"
+                        android:layout_margin="@dimen/dp_8"
+                        android:background="@drawable/otp_background"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_15"
+                        android:textColor="@color/color_devil_blue"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/otp_3"
+                        android:layout_width="@dimen/dp_38"
+                        android:layout_height="@dimen/dp_38"
+                        android:layout_margin="@dimen/dp_8"
+                        android:background="@drawable/otp_background"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_15"
+                        android:textColor="@color/color_devil_blue"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/otp_4"
+                        android:layout_width="@dimen/dp_38"
+                        android:layout_height="@dimen/dp_38"
+                        android:layout_margin="@dimen/dp_8"
+                        android:background="@drawable/otp_background"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_15"
+                        android:textColor="@color/color_devil_blue"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/otp_5"
+                        android:layout_width="@dimen/dp_38"
+                        android:layout_height="@dimen/dp_38"
+                        android:layout_margin="@dimen/dp_8"
+                        android:background="@drawable/otp_background"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_15"
+                        android:visibility="visible"
+                        android:textColor="@color/color_devil_blue"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/otp_6"
+                        android:layout_width="@dimen/dp_38"
+                        android:layout_height="@dimen/dp_38"
+                        android:layout_margin="@dimen/dp_8"
+                        android:background="@drawable/otp_background"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_15"
+                        android:visibility="visible"
+                        android:textColor="@color/color_devil_blue"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_128"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:layout_marginEnd="@dimen/dp_128"
+                    android:background="@drawable/login_button_background"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lyt_otp_parent">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_privacy_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_128"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_128"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="@string/privacy_policy"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_grey"
+                    android:textSize="@dimen/text_size_14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_login">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            android:id="@+id/lyt_progress_parent"
+            layout="@layout/include_progress" />
+    </FrameLayout>
+</layout>

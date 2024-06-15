@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="model"
+            type="com.tvhht.myapplication.api.error.NetworkState" />
+
+        <import type="android.view.View" />
+
+        <import type="com.tvhht.myapplication.api.error.NetworkState.STATUS" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/id_empty_view"
+        android:gravity="center"
+        android:visibility="@{model.status != STATUS.LOADED ? View.VISIBLE : View.GONE}"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="?attr/colorPrimaryDark"
+            android:visibility="@{model.status == STATUS.LOADING || model.status == STATUS.START ? View.VISIBLE : View.GONE}" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_30"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/dp_30"
+            android:paddingStart="@dimen/dp_30">
+
+            <ImageView
+                android:id="@+id/error_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@{model.imageResourceId}"
+                android:visibility="@{model.imageResourceId == 0 ? View.GONE:View.VISIBLE}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:gravity="center_horizontal"
+                android:text="@{model.headerTxt1}"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:lineSpacingMultiplier=".7"
+                android:layout_marginTop="@dimen/dp_25"
+                android:textSize="@dimen/sp_16"
+                android:visibility="@{TextUtils.isEmpty(model.headerTxt1) ? View.GONE:View.VISIBLE}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:gravity="center_horizontal"
+                android:text="@{model.descText1}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:lineSpacingMultiplier=".7"
+                android:visibility="@{TextUtils.isEmpty(model.descText1) ? View.GONE:View.VISIBLE}" />
+
+            <Button
+                android:id="@+id/retry_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/bg_rounded_grey"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_40"
+                android:paddingRight="@dimen/dp_40"
+                android:text="@{model.btnText1}"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="@{TextUtils.isEmpty(model.btnText1) ? View.GONE:View.VISIBLE}" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

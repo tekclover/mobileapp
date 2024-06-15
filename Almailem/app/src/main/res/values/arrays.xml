@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reason">
+        <item>Damaged</item>
+        <item>Missing</item>
+        <item>Mismatch</item>
+        <item>Aisle Block</item>
+        <item>Box Qty</item>
+    </string-array>
+    <string-array name="reason_for_rejection">
+        <item>Damaged</item>
+        <item>Qty Mismatched</item>
+    </string-array>
+</resources>

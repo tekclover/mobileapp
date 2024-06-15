@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyt_quotation_matter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_matter_no_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                android:text="@string/matter_no"
+                app:layout_constraintEnd_toStartOf="@+id/text_matter_date_label"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Matter No" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_matter_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toStartOf="@+id/text_matter_date"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_matter_no_label"
+                tools:text="565656" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_matter_date_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                android:text="@string/date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_matter_no_label"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Date" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_matter_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_2"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_matter_no"
+                app:layout_constraintTop_toBottomOf="@+id/text_matter_date_label"
+                tools:text="2023-09-06" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyt_quotation_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lyt_quotation_matter">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_quote_no_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                android:text="@string/quote_no"
+                app:layout_constraintEnd_toStartOf="@+id/text_quote_status_label"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Quote No" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_quote_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toStartOf="@+id/text_quote_status"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_quote_no_label"
+                tools:text="565656gfg" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_quote_status_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                android:text="@string/status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_quote_no_label"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Status" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_quote_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_2"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_quote_no"
+                app:layout_constraintTop_toBottomOf="@+id/text_quote_status_label"
+                tools:text="2023-09-06" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyt_quotation_expand_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lyt_quotation_no">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lyt_img_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/lyt_img_payment"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_view"
+                    android:layout_width="@dimen/dp_32"
+                    android:layout_height="@dimen/dp_32"
+                    app:srcCompat="@drawable/ic_view" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lyt_img_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/lyt_img_view"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_payment"
+                    android:layout_width="@dimen/dp_32"
+                    android:layout_height="@dimen/dp_32"
+                    app:srcCompat="@drawable/ic_payment" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

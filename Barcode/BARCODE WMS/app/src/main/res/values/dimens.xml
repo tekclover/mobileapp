@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="viewpager_circleindicator_radius">4.5dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="dp_15" >15dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+</resources>

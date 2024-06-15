@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutDialogContainer"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/dialog_bg"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dialog_header"
+                android:padding="10dp"
+                android:text="Enter Quantity"
+                android:textColor="@color/white_two"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imageIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icon_scan_code"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="@id/textTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textTitle"
+                app:tint="@color/white_two" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Enter Qty"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonAction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/arial"
+                    android:letterSpacing="-0.02"
+                    android:text="Picked Qty"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+
+                    android:padding="15dp">
+
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/qty_one"
+                        android:enabled="false"
+                        android:background="@null"
+                        android:textColor="@color/brownish_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:maxLength="8"
+                        android:text="100">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/arial"
+                    android:letterSpacing="-0.02"
+                    android:text="Counted Qty"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:padding="15dp">
+
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/qty_two"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:maxLength="8"
+                        android:textColor="@color/brownish_grey">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonNo"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button_bg_red"
+                    android:textColor="@color/white_two"
+                    android:text="Cancel"
+                    android:textSize="12sp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:text="@string/confirm"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonYes"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button_bg_orange"
+                    android:textColor="@color/white_two"
+                    android:textSize="12sp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout></LinearLayout>
+
+</RelativeLayout>

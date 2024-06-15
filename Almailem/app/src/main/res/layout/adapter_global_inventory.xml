@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_company_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:letterSpacing="-0.03"
+            android:padding="@dimen/dp_8"
+            android:textColor="@color/warm_grey_two"
+            android:textSize="@dimen/text_size_11_5sp"
+            android:textStyle="bold"
+            tools:text="Company ID" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_branch_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:letterSpacing="-0.03"
+            android:padding="@dimen/dp_8"
+            android:textColor="@color/warm_grey_two"
+            android:textSize="@dimen/text_size_11_5sp"
+            android:textStyle="bold"
+            tools:text="Branch ID" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_inv_qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:letterSpacing="-0.03"
+            android:padding="@dimen/dp_8"
+            android:textColor="@color/warm_grey_two"
+            android:textSize="@dimen/text_size_11_5sp"
+            android:textStyle="bold"
+            tools:text="Inv Qty" />
+    </LinearLayout>
+</layout>

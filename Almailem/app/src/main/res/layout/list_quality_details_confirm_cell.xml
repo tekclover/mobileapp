@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cell_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:gravity="start"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/text_size_11sp"
+                android:textStyle="bold"
+                tools:text="HE No" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="25"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cell_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:gravity="start"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/text_size_11sp"
+                android:textStyle="bold"
+                tools:text="Part No" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="28"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cell_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:gravity="start"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/text_size_11sp"
+                android:textStyle="bold"
+                tools:text="Barcode" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="19"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cell_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:layout_marginStart="@dimen/dp_18"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/text_size_11sp"
+                android:textStyle="bold"
+                tools:text="Picked qty" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/txt_cell_5"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                app:srcCompat="@drawable/ic_check_box_blank"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</LinearLayout>

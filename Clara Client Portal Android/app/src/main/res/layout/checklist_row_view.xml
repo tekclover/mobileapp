@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyt_check_list_matter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_matter_no_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:text="@string/matter_no"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toStartOf="@+id/text_check_list_date_label"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Matter No" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_matter_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toStartOf="@+id/text_check_list_date"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_matter_no_label"
+                tools:text="565656" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_check_list_date_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:text="@string/date"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_matter_no_label"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Date" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_check_list_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_2"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/text_matter_no"
+                app:layout_constraintTop_toBottomOf="@+id/text_check_list_date_label"
+                tools:text="2023-09-06" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyt_check_list_expand_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lyt_check_list_matter">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lyt_check_list_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/lyt_check_list_img_view"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_check_list_status_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/status"
+                    android:textColor="@color/color_grey"
+                    android:textSize="@dimen/text_size_13"
+                    tools:text="Status" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_check_list_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_13"
+                    tools:text="Received" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lyt_check_list_img_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/lyt_check_list_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/lyt_check_list_status"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_check_list_view"
+                    android:layout_width="@dimen/dp_32"
+                    android:layout_height="@dimen/dp_32"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_view" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

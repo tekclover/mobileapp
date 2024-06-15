@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "930706163709",
+    "project_id": "almailem-29a5e",
+    "storage_bucket": "almailem-29a5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930706163709:android:07a9e4df1b27335bd93b94",
+        "android_client_info": {
+          "package_name": "com.tekclover.classicwmsalmailem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWdqUUQbw9G5l0yGitRz4hDNor6MVVbws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

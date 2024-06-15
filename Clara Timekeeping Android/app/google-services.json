@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "362224530673",
+    "project_id": "clara---client",
+    "storage_bucket": "clara---client.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362224530673:android:e82801a4080d60c06ca550",
+        "android_client_info": {
+          "package_name": "com.clara.clientportal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHzluOCJ2t6ZEfyOZxUPR6jCTOdF674q4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362224530673:android:1386fc3c678a8b156ca550",
+        "android_client_info": {
+          "package_name": "com.clara.timekeeping"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHzluOCJ2t6ZEfyOZxUPR6jCTOdF674q4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="viewpager_circleindicator_radius">4.5dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="dp_15" >15dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_350">350dp</dimen>
+    <dimen name="dp_450">450dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_11_5sp">11.5sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_13_5sp">13.5sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+</resources>

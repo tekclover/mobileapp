@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_16">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_matter_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_devil_blue"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_8"
+                android:text="@string/menu_matter"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Matter" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_close"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_margin="@dimen/dp_10"
+                app:layout_constraintBottom_toBottomOf="@+id/text_matter_no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text_matter_no"
+                app:srcCompat="@drawable/ic_close" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_matter_no">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lyt_open_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/color_devil_blue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_8"
+                            android:layout_height="@dimen/dp_8"
+                            app:srcCompat="@drawable/dot_background" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginTop="-4dp"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:text="@string/open_on"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/color_devil_blue"
+                            android:textSize="@dimen/text_size_14"
+                            tools:text="Open On" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text_open_on"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:drawableStart="@drawable/ic_calendar"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/na"
+                            android:textColor="@color/color_grey"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="NA" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lyt_filed_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lyt_open_on">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/color_devil_blue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_8"
+                            android:layout_height="@dimen/dp_8"
+                            app:srcCompat="@drawable/dot_background" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:text="@string/filed_on"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/color_devil_blue"
+                            android:textSize="@dimen/text_size_14"
+                            tools:text="Filed On" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text_filed_on"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:drawableStart="@drawable/ic_calendar"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/na"
+                            android:textColor="@color/color_grey"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="NA" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lyt_receipt_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lyt_filed_on">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/color_devil_blue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_8"
+                            android:layout_height="@dimen/dp_8"
+                            app:srcCompat="@drawable/dot_background" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:text="@string/receipt_on"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/color_devil_blue"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="Receipt On" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text_receipt_on"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:drawableStart="@drawable/ic_calendar"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/na"
+                            android:textColor="@color/color_grey"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="NA" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lyt_rfe_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lyt_receipt_on">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/color_devil_blue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_8"
+                            android:layout_height="@dimen/dp_8"
+                            app:srcCompat="@drawable/dot_background" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:text="@string/rfe_on"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/color_devil_blue"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="RFE On" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text_rfe_on"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:drawableStart="@drawable/ic_calendar"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/na"
+                            android:textColor="@color/color_grey"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="NA" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lyt_approved_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lyt_rfe_on">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/color_devil_blue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_8"
+                            android:layout_height="@dimen/dp_8"
+                            app:srcCompat="@drawable/dot_background" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:text="@string/approved_on"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/color_devil_blue"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="Approved On" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text_approved_on"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:drawableStart="@drawable/ic_calendar"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/na"
+                            android:textColor="@color/color_grey"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="NA" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lyt_close_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lyt_approved_on">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_8"
+                            android:layout_height="@dimen/dp_8"
+                            app:srcCompat="@drawable/dot_background" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginTop="-3dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:text="@string/closed_on"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/color_devil_blue"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="Closed On" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text_closed_on"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:drawableStart="@drawable/ic_calendar"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:fontFamily="@font/roboto_slab_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/na"
+                            android:textColor="@color/color_grey"
+                            android:textSize="@dimen/text_size_13"
+                            tools:text="NA" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

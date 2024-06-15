@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_hht_user_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial"
+            android:gravity="start"
+            android:letterSpacing="-0.03"
+            android:padding="@dimen/dp_8"
+            android:textColor="@color/warm_grey_two"
+            android:textSize="@dimen/text_size_11_5sp"
+            android:textStyle="bold"
+            tools:text="HHT User ID" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_hht_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial"
+            android:gravity="start"
+            android:letterSpacing="-0.03"
+            android:padding="@dimen/dp_8"
+            android:textColor="@color/warm_grey_two"
+            android:textSize="@dimen/text_size_11_5sp"
+            android:textStyle="bold"
+            tools:text="HHT User Name" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_check"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/ic_check_box_blank" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lyt_toolbar"
+            layout="@layout/include_toolbar" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lyt_search_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_time_ticket_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_devil_blue"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:padding="@dimen/dp_16"
+                    android:text="@string/time_ticket_search"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_matter_no_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    android:fontFamily="@font/roboto_slab_semi_bold"
+                    android:text="@string/matter_id"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_15"
+                    tools:text="Matter ID" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_matter_id"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    app:boxStrokeColor="@color/color_warm_grey_3"
+                    app:endIconDrawable="@drawable/ic_arrow_drop_down"
+                    app:endIconMode="custom"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_txt_matter_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cursorVisible="false"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_slab_regular"
+                        android:hint="@string/select"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/color_black_2"
+                        android:textColorHint="@color/color_grey_2"
+                        android:textSize="@dimen/text_size_13" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_time_keeper_code_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    android:fontFamily="@font/roboto_slab_semi_bold"
+                    android:text="@string/time_keeper_code"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_15"
+                    tools:text="Time Keeper Code" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_time_keeper_code"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    app:endIconMode="none"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_txt_time_keeper_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/timekeeper_code_background"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_slab_regular"
+                        android:inputType="none"
+                        android:textColor="@color/color_black_2"
+                        android:textSize="@dimen/text_size_13" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_bill_type_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    android:fontFamily="@font/roboto_slab_semi_bold"
+                    android:text="@string/bill_type"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_15"
+                    tools:text="Bill Type" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_bill_type"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    app:boxStrokeColor="@color/color_warm_grey_3"
+                    app:endIconDrawable="@drawable/ic_arrow_drop_down"
+                    app:endIconMode="custom"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_txt_bill_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_slab_regular"
+                        android:hint="@string/select"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/color_black_2"
+                        android:textColorHint="@color/color_grey_2"
+                        android:textSize="@dimen/text_size_13" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_date_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    android:fontFamily="@font/roboto_slab_semi_bold"
+                    android:text="@string/date"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_15"
+                    tools:text="Date" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_date"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    app:boxStrokeColor="@color/color_warm_grey_3"
+                    app:endIconDrawable="@drawable/ic_calendar"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/color_devil_blue"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_txt_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_slab_regular"
+                        android:hint="@string/select"
+                        android:textColor="@color/color_black_2"
+                        android:textColorHint="@color/color_grey_2"
+                        android:textSize="@dimen/text_size_13" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_status_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    android:fontFamily="@font/roboto_slab_semi_bold"
+                    android:text="@string/status"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_15"
+                    tools:text="Status" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_status"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    app:boxStrokeColor="@color/color_warm_grey_3"
+                    app:endIconDrawable="@drawable/ic_arrow_drop_down"
+                    app:endIconMode="custom"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_txt_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_slab_regular"
+                        android:hint="@string/select"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/color_black_2"
+                        android:textColorHint="@color/color_grey_2"
+                        android:textSize="@dimen/text_size_13" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_42"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:layout_marginEnd="@dimen/dp_42"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btn_reset"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/dark_red_rectangle_background"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_12"
+                        android:paddingEnd="@dimen/dp_12"
+                        android:paddingBottom="@dimen/dp_12"
+                        android:text="@string/reset"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btn_execute"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dp_18"
+                        android:layout_weight="1"
+                        android:background="@drawable/devil_blue_rectangle_background"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_12"
+                        android:paddingEnd="@dimen/dp_12"
+                        android:paddingBottom="@dimen/dp_12"
+                        android:text="@string/execute"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_13" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include
+                android:id="@+id/lyt_progress_parent"
+                layout="@layout/include_progress" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

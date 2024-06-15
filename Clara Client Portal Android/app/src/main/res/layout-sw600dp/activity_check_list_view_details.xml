@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.clara.clientportal.ui.checklist.CheckListViewModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lyt_toolbar"
+            layout="@layout/include_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_check_list_document_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_devil_blue"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:padding="@dimen/dp_16"
+                    android:text="@string/menu_document_upload"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_22" />
+
+                <include
+                    android:id="@+id/lyt_header_view"
+                    layout="@layout/header6_check_list_upload_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/check_list_document_upload_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/dp_8"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp_24"
+                    android:paddingBottom="@dimen/dp_24"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="@dimen/dp_110"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cancel_button_background"
+                        android:fontFamily="@font/roboto_slab_regular"
+                        android:gravity="center_horizontal"
+                        android:paddingStart="@dimen/dp_16"
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingEnd="@dimen/dp_16"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:text="@string/cancel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_13"
+                        tools:text="Cancel" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btn_submit"
+                        android:layout_width="@dimen/dp_110"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_24"
+                        android:background="@drawable/login_button_background"
+                        android:fontFamily="@font/roboto_slab_regular"
+                        android:gravity="center_horizontal"
+                        android:paddingStart="@dimen/dp_16"
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingEnd="@dimen/dp_16"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_13"
+                        tools:text="Submit" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include
+                android:id="@+id/lyt_progress_parent"
+                layout="@layout/include_progress" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

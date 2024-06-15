@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_devil_blue"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_8"
+            android:text="@string/menu_document_upload"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Document Upload" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_margin="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="@+id/text_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_header"
+            app:srcCompat="@drawable/ic_close" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_matter_no_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:text="@string/matter_id"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_header"
+            tools:text="Matter ID" />
+
+<!--
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_matter_id"
+            style="@style/autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:hint="@string/select"
+            app:hintTextColor="@color/color_grey_low"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_matter_no_label">
+
+            <AutoCompleteTextView
+                android:id="@+id/drop_down_matter_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/input_layout_matter_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_42"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:background="@drawable/file_name_background"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_matter_no_label">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_matter_no_label" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_drop_down" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_choose_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:text="@string/choose_file"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_layout_matter_id"
+            tools:text="Choose File" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_choose_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_4"
+            android:background="@color/color_devil_blue"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:padding="@dimen/dp_10"
+            android:text="@string/choose_file"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_choose_file"
+            tools:text="Choose File" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_file_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:background="@drawable/file_name_background"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:hint="@string/no_file_choose"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_13"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toEndOf="@+id/btn_choose_file"
+            app:layout_constraintTop_toBottomOf="@+id/text_choose_file"
+            tools:text="No file choosen" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_24"
+            android:paddingBottom="@dimen/dp_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_choose_file">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancel_button_background"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:gravity="center_horizontal"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_13"
+                tools:text="Cancel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_save"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:background="@drawable/login_button_background"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:gravity="center_horizontal"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_13"
+                tools:text="Save" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,130 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+
+
+
+}
+
+android {
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        checkReleaseBuilds false
+    }
+    compileSdk 31
+
+    defaultConfig {
+
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core-ktx:1.5.0' }
+        }
+        applicationId "com.tvhht.myapplication"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        dexOptions {
+            javaMaxHeapSize "12G"
+            preDexLibraries true
+        }
+
+        multiDexEnabled true
+        buildConfigField "int", "LIMIT", "100"
+        buildConfigField "int", "CACHETIME", "432000" // 5days
+        flavorDimensions "default"
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            shrinkResources false
+            minifyEnabled false
+            jniDebuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+      // buildConfigField "String", "SERVER_URL", '"http://27.7.57.232:18080/classicwms/"'
+      buildConfigField "String", "SERVER_URL", '"https://dev.classicwms.com:8086/classicwms/"'
+     // buildConfigField "String", "SERVER_URL", '"http://3.111.203.218:8086/classicwms/"'
+      //buildConfigField "String", "SERVER_URL", '"https://classicwms.com:8086/classicwms/"'
+
+
+        }
+
+        release {
+            debuggable false
+            shrinkResources false
+            minifyEnabled false
+            jniDebuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+           // buildConfigField "String", "SERVER_URL", '"https://qa.classicwms.com:8086/classicwms/"'
+            buildConfigField "String", "SERVER_URL", '"https://d.classicwms.com:8286/classicwms/"'
+            //buildConfigField "String", "SERVER_URL", '"https://classicwms.com:8086/classicwms/"'
+           // buildConfigField "String", "SERVER_URL", '"https://demo.classicwms.com:8186/classicwms/"'
+
+        }
+
+
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+
+    //retrofit
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.squareup.retrofit2:adapter-rxjava:2.9.0"
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.3.8'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.20'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+
+    // Room components
+    implementation 'androidx.room:room-runtime:2.4.2'
+    implementation 'androidx.work:work-runtime:2.7.1'
+    annotationProcessor 'androidx.room:room-compiler:2.4.2'
+    testImplementation 'androidx.room:room-testing:2.4.2'
+    implementation "androidx.room:room-ktx:2.4.2"
+// Lifecycle components
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.2.0'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+    androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.+'
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation files('libs/barcode_scanner_library_v2.6.2.0-release.aar')
+}

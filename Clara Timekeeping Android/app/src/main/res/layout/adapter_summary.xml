@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/horizontal_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_grey_low" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vertical_view_1"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_46"
+                android:background="@color/color_grey_low" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_no"
+                android:layout_width="@dimen/dp_52"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:padding="@dimen/dp_12"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13"
+                tools:text="1" />
+
+            <View
+                android:id="@+id/vertical_view_2"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_46"
+                android:background="@color/color_grey_low"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_matter_no_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingEnd="@dimen/dp_4"
+                android:paddingBottom="@dimen/dp_12"
+                android:text="@string/matter_no"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_charcoal_grey"
+                android:textSize="@dimen/text_size_13"
+                tools:text="Matter No" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_matter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_slab_semi_bold"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingEnd="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_devil_blue"
+                android:textSize="@dimen/text_size_13"
+                tools:text="500040-02-madeleine willars test litigatin" />
+
+            <View
+                android:id="@+id/vertical_view_3"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_46"
+                android:background="@color/color_grey_low"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+            <View
+                android:id="@+id/vertical_view_4"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_46"
+                android:background="@color/color_grey_low" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/horizontal_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_grey_low" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lyt_expand_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/vertical_view_5"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_375"
+                android:background="@color/color_grey_low"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lyt_time_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_30"
+                android:paddingEnd="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_time_ticket_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/time_ticket"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_grey_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@+id/text_time_ticket_date_label"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Time Ticket" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_time_ticket"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@+id/text_time_ticket_date"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_time_ticket_label"
+                    tools:text="614310" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_time_ticket_date_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/time_ticket_date"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_grey_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/text_time_ticket_label"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Time Ticket Date" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_time_ticket_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/text_time_ticket"
+                    app:layout_constraintTop_toBottomOf="@+id/text_time_ticket_date_label"
+                    tools:text="05-21-2023" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lyt_client_name_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lyt_time_ticket">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_client_name_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/client_name"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_grey_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Client Name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_client_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_client_name_label"
+                    tools:text="500040-Primrose School at the Galleria" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lyt_matter_name_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lyt_client_name_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_matter_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/matter_name"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_grey_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Matter Name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_matter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_matter_name_label"
+                    tools:text="500040-02-madeleine willars test litigation" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lyt_booked_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lyt_matter_name_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_booked_hours_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/booked_hours"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_grey_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@+id/text_booked_amount_label"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Booked Hours" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_booked_hours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@+id/text_booked_amount"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_booked_hours_label"
+                    tools:text="1.2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_booked_amount_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/booked_amount"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_grey_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/text_booked_hours_label"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Booked Amount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_booked_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/text_booked_hours"
+                    app:layout_constraintTop_toBottomOf="@+id/text_booked_amount_label"
+                    tools:text="$500" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lyt_bill_type_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lyt_booked_hours">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_bill_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/bill_type"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_grey_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Bill Type" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_bill_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_bill_type_label"
+                    tools:text="Billable" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lyt_task_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lyt_bill_type_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_task_code_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/task_code"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_grey_2"
+                    android:textSize="@dimen/text_size_13"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/text_activity_code_label"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Task Code" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_task_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_13"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/text_activity_code"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_task_code_label"
+                    tools:text="B100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_activity_code_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="@string/activity_code"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_grey_2"
+                    android:textSize="@dimen/text_size_13"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/text_task_code_label"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Activity Code" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_activity_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_black_2"
+                    android:textSize="@dimen/text_size_13"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/text_task_code"
+                    app:layout_constraintTop_toBottomOf="@+id/text_activity_code_label"
+                    tools:text="A001" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_12"
+                android:text="@string/description"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_grey_2"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lyt_task_code"
+                tools:text="Description" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingEnd="@dimen/dp_12"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_black_2"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_description_label"
+                tools:text="Manage preparation of starting due diligence process with seller; send email to commence." />
+
+            <View
+                android:id="@+id/vertical_view_6"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_375"
+                android:background="@color/color_grey_low"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lyt_actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="@drawable/devil_blue_dark_rectangle_background"
+                android:padding="@dimen/dp_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_description">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_semi_bold"
+                    android:text="@string/edit"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_copy"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Edit" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_copy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_semi_bold"
+                    android:text="@string/copy"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/btn_edit"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Copy" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_semi_bold"
+                    android:text="@string/delete"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/btn_copy"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Delete" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lyt_header7_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white_smoke"
+        android:padding="@dimen/dp_16">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:gravity="start"
+            android:textColor="@color/color_spanish_gray"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintEnd_toStartOf="@+id/text_title_2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title 1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:gravity="start"
+            android:textColor="@color/color_spanish_gray"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintEnd_toStartOf="@+id/text_title_3"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/text_title_1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title 2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:gravity="start"
+            android:textColor="@color/color_spanish_gray"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintEnd_toStartOf="@+id/text_title_4"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/text_title_2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title 3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:gravity="start"
+            android:textColor="@color/color_spanish_gray"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintEnd_toStartOf="@+id/text_title_5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/text_title_3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title 4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:gravity="start"
+            android:textColor="@color/color_spanish_gray"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintEnd_toStartOf="@+id/text_title_6"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/text_title_4"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title 5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:gravity="start"
+            android:textColor="@color/color_spanish_gray"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintEnd_toStartOf="@+id/text_title_7"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/text_title_5"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title 6" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:gravity="start"
+            android:textColor="@color/color_spanish_gray"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/text_title_6"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title 7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

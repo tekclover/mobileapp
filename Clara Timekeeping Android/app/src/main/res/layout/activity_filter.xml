@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lyt_toolbar"
+            layout="@layout/include_toolbar" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_time_ticket_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_devil_blue"
+                android:fontFamily="@font/roboto_slab_regular"
+                android:padding="@dimen/dp_16"
+                android:text="@string/time_ticket_search"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_4"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_all"
+                    android:layout_width="@dimen/dp_32"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_gravity="center_vertical"
+                    android:buttonTint="@color/color_grey_2"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_txt_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:background="@drawable/filter_background"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:gravity="center_vertical"
+                    android:hint="@string/search"
+                    android:padding="@dimen/dp_8"
+                    android:textColor="@color/color_black_2"
+                    android:textColorHint="@color/color_cool_grey"
+                    android:textSize="@dimen/text_size_14" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/filter_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp_24"
+                android:background="@drawable/devil_blue_rectangle_background"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp_52"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingEnd="@dimen/dp_52"
+                android:paddingBottom="@dimen/dp_12"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
